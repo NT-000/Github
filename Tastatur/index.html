@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#textInput {
+    background-color: rgb(0, 47, 255);
+    height:200px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.keyboard {
+    /* display: flex;
+    flex-direction: row; */
+    border: 1px solid black;
+    height: 100px;
+    width: 300px;
+}
+
+/* #a,
+#b,
+#c,
+#d,
+#e,
+#f,
+#g,
+#h,
+#i,
+#j,
+#k,
+#l,
+#m,
+#n,
+#o,
+#p,
+#q,
+#r,
+#s,
+#t,
+#u,
+#v,
+#w,
+#x,
+#y,
+#z,
+#æ,
+#ø,
+#å {
+    /* display: flex;
+    flex-direction: row; */
+    /* height: 20px;
+    width: 20px;
+    border: 1px solid black; */
+
+.row1,
+.row2, 
+.row3 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+</style>
+<body>
+    <div class="frameText"></div>
+    <div id="textInput"></div>
+</div>
+    <div class="keyboard">
+        <div class="row1">
+        <button id="a" onclick="letterInput(this)">A</button>
+        <button id="b" onclick="letterInput(this)">B</button>
+        <button id="c" onclick="letterInput(this)">C</button>
+        <button id="d" onclick="letterInput(this)">D</button>
+        <button id="e" onclick="letterInput(this)">E</button>
+        <button id="f" onclick="letterInput(this)">F</button>
+        <button id="g" onclick="letterInput(this)">G</button>
+        <button id="h" onclick="letterInput(this)">H</button>
+        <button id="i" onclick="letterInput(this)">I</button>
+        <button id="j" onclick="letterInput(this)">J</button>
+    </div>
+
+
+    <div class="row2">
+        <button id="k" onclick="letterInput(this)">K</button>
+        <button id="l" onclick="letterInput(this)">L</button>
+        <button id="m" onclick="letterInput(this)">M</button>
+        <button id="n" onclick="letterInput(this)">N</button>
+        <button id="o" onclick="letterInput(this)">O</button>
+        <button id="p" onclick="letterInput(this)">P</button>
+        <button id="q" onclick="letterInput(this)">Q</button>
+        <button id="r" onclick="letterInput(this)">R</button>
+        <button id="s" onclick="letterInput(this)">S</button>
+        <button id="t" onclick="letterInput(this)">T</button>
+    </div>
+
+    <div class="row3">
+        <button id="u" onclick="letterInput(this)">U</button>
+        <button id="v" onclick="letterInput(this)">V</button>
+        <button id="w" onclick="letterInput(this)">W</button>
+        <button id="x" onclick="letterInput(this)">X</button>
+        <button id="y" onclick="letterInput(this)">Y</button>
+        <button id="z" onclick="letterInput(this)">Z</button>
+        <button id="æ" onclick="letterInput(this)">Æ</button>
+        <button id="ø" onclick="letterInput(this)">Ø</button>
+        <button id="å" onclick="letterInput(this)">Å</button>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+</div>
+
+<script>
+
+    let inputLetter = document.getElementById('textInput');
+    
+    function letterInput(input) {
+        // inputLetter.innerhtml = /*HTML*/``
+        let lettersPushed = input.innerHTML; 
+        inputLetter.innerHTML += lettersPushed;
+
+    }
+    function reset(){
+        location.reload();
+    }
+
+
+</script>
+</body>
+</html>
